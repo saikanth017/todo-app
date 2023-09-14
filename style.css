@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(73,221,177,1) 0%, rgba(0,178,214,1) 88%);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width: 40%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 14px;
+    min-height: 200px;
+}
+
+.container h1{
+    color: white;
+}
+
+.input-container{
+    display: flex;
+    width: 80%;
+    height: 50px;
+    justify-content: space-between;
+    margin: auto;
+    border-radius: 25px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#taskInput{
+    width: 70%;
+    background-color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 14px;
+    outline: none;
+    font-size: large;
+}
+
+#taskInput:focus{
+    border: 3px solid #00e3a0;
+}
+
+#addTask{
+    border: none;
+    background-color: #00e3a0;
+    cursor: pointer;
+    border-radius: 14px;
+    height: 100%;
+    width: 20%;
+    font-size: large;
+}
+
+.input-container input::placeholder{
+    color: black;
+    font-size: larger;
+}
+
+#taskList{
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+#alert-message{
+    color: red;
+}
+
+.sub-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.716);
+    color: black;
+    height: 35px;
+    align-items: center;
+    margin: 10px auto;
+    border-radius: 14px;
+}
+
+.text-data {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+    text-align: start;
+    outline: none;
+}
+
+
+.delete-button{
+    background: none;
+    border: none;
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #7C4DFF;
+}
+.container{
+    width: 40%;
+    min-width: 350px;
+    background-color: white;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#taskinfo{
+    width: 75%;
+    height: 35px;
+    border: 2px solid #d1d3d8;
+    border-radius: 6px;
+    color: #111115;
+    font-weight: 400;
+    padding-left: 5px;
+}
+#taskinfo:focus{
+    outline: none;
+    border-color: #0d75ec;
+}
+
+#add{
+    width: 20%;
+    height: 35px;
+    border-radius:5px;
+    font-weight: 500;
+    background-color: #7C4DFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+#tasklist{
+    margin-bottom: 9px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c5e1e6;
+    height: 45px;
+    margin-bottom: 9px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #939697;
+}
+.del{
+    color:#d11a2a;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+   
+}
+
+#work{
+    outline: none;
+    border: none;
+} */
