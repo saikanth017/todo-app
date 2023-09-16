@@ -16,39 +16,25 @@ addTask.onclick = () => {
             <button class="delete-button">DELETE</button>
         </div>
         ` +taskList.innerHTML
+        saveData();
         let alltasks = document.querySelectorAll('.delete-button')
-        taskList.addEventListener("click", function (event) {
-            if (event.target.classList.contains("delete-button")) {
-                event.target.parentNode.remove();
-            }
-        });
     }
 }
 
+taskList.addEventListener("click", function (event) {
+    if (event.target.classList.contains("delete-button")) {
+        event.target.parentNode.remove();
+        saveData();
+    }
+});
 
 
+const saveData = () => {
+    localStorage.setItem("data", taskList.innerHTML)
+}
 
+const getData = () => {
+    taskList.innerHTML = localStorage.getItem("data")
+}
 
-// let todoele = document.getElementById("taskinfo")
-// let tasklist = document.getElementById("tasklist")
-
-// document.getElementById("add").onclick =function(){
-//     if(todoele.value.length==0){
-//         alert("Enter a task details")
-//     }
-//     else{
-//         tasklist.innerHTML = tasklist.innerHTML+`    
-//         <div class="task"> 
-//             <span contenteditable="true" id="work">${todoele.value}</span>
-//             <button class="del"><i class="fa fa-trash"></i></button>
-//         </div>`
-
-//         let alltasks = document.querySelectorAll('.del')
-//         for(i=0;i<alltasks.length;i++){
-//                 alltasks[i].onclick = function(){
-//                 this.parentNode.remove()
-//             }
-//         }
-//         todoele.value=""
-//     }
-// }
+getData();
